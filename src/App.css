@@ -1,0 +1,20 @@
+#root, .App {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.a-canvas {
+  background-color: #000;
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .a-canvas {
+    width: 1920px !important;
+    height: 1080px !important;
+    position: relative !important;
+  }
+}
