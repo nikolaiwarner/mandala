@@ -4,12 +4,37 @@ import $ from 'jquery'
 // import logo from './logo.svg';
 import './App.css';
 
+const runEvents = () => {
+  setTimeout(() => {
+    $('.listening')[0].emit('door-one'); console.log(1);
+    setTimeout(() => {
+      $('.listening')[0].emit('door-two'); console.log(2);
+      setTimeout(() => {
+        $('.listening')[0].emit('door-three'); console.log(3);
+        setTimeout(() => {
+          $('.listening')[0].emit('door-four'); console.log(4);
+          runEvents()
+        }, 6000)
+      }, 6000)
+    }, 6000)
+  }, 6000)
+}
+
+
 class App extends Component {
+  componentDidMount() {
+    var scene = document.querySelector('a-scene');
+    if (scene.hasLoaded) {
+      runEvents();
+    } else {
+      scene.addEventListener('loaded', runEvents);
+    }
+  }
+  
   render() {
-    $('window') // stop warning messages
     return (
       <div className="App">
-        <a-scene vr-mode-ui="enabled: true">
+        <a-scene vr-mode-ui="enabled: true"  inspector >
           <a-assets>
             <img id="sludge1" src={require('./images/sludge2.gif')} alt="" />
             <img id="lines1" src={require('./images/lines1.gif')} alt="" />
@@ -21,70 +46,47 @@ class App extends Component {
             <img id="test4" src={require('./images/png-18.png')} alt="" />
             <img id="test5" src={require('./images/ELIANDNICK__0221.jpg')} alt="" />
             
+            <video id="video1" autoPlay loop="true" src={require('./images/typical-nick-totally.webm')} />
+ 
+            
+            <audio id="sounds" src={require('./images/mandala-music.mp3')} />
           </a-assets>
+        
           
           // far 
-          <a-sky color="white"></a-sky>
+          <a-sky id="sky" color="gold"></a-sky>
           <a-entity geometry="primitive:sphere; radius:100" scale='-1 1 1' material="repeat: 3 3; shader:flat; transparent:true; src:#sludge3;"></a-entity>
     
-          
-        
-        
-          
+
           // near
           
-          <a-entity position="-10 0 -10" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
-        
-          <a-image src="#test5" position="-10 0 -19" look-at="#camera" geometry="primitive:plane; width: 100; height: 50"></a-image>
-         
-        
-        
-          <a-entity>
-            <a-animation attribute="rotation"
-              to="0 -360 0"
-              dur="108000"
-              fill="forwards"
-              easing="ease-in-out-sine"
-              repeat="indefinite"></a-animation>
-            
-            <a-entity rotation="45 45 0" geometry="primitive:sphere; radius:10" scale='-1 1 1' material="repeat: 10 10; shader:flat; transparent:true; src:#lines1;"></a-entity>
+          <a-entity position="-10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
+          <a-entity position="10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
+          <a-entity position="-10 0 8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
+          <a-entity position="10 0 8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
+          
+          <a-entity id="door-one" position="0 0 -10">
+            <a-entity id="titles" position="-0.6 0 7">
+              <a-entity bmfont-text="text: mandala" color="#fff" position="0 0 0" letterSpacing="10"></a-entity>
+              <a-entity bmfont-text="text: nick warner" color="#fff" position="0 -0.25 -0.25" scale="0.8 0.8 0.8"></a-entity>
+              <a-entity bmfont-text="text: 2016" color="#fff" position="0 -0.4 -0.25" scale="0.5 0.5 0.5"></a-entity>
+            </a-entity>
           </a-entity>
           
-          <a-entity>
-            <a-animation attribute="rotation"
-              to="0 360 0"
-              dur="108000"
-              fill="forwards"
-              easing="ease-in-out-sine"
-              repeat="indefinite"></a-animation>
-            
-            <a-entity rotation="180 45 0" geometry="primitive:sphere; radius:10" scale='-1 1 1' material="repeat: 4 4; shader:flat; transparent:true; src:#lines1;"></a-entity>
-          </a-entity>
-          
-          
-  
-          // fixed
-          <a-entity position="0 0 0">
-             <a-animation attribute="rotation"
-               to="0 -360 0"
-               dur="108000"
-               fill="forwards"
-               easing="ease-in-out-sine"
-               repeat="indefinite"></a-animation>
-               
-               
-            // fixed far
-            
-          
-            // fixed near
-             
-            
-            <a-camera id="camera" wasd-controls-enabled look-controls wasd-controls="fly:true; acceleration:400">
-              // fixed to camera
-            
-            
+          <a-entity id="door-four" position="-15 0 25" look-at="#camera">
               // mandala
-              <a-entity id="mandala" position="0 0 -20" scale="10 10 10">
+              <a-entity id="mandala" class="listening" position="0 0 -20" scale="10 10 10" material="transparent:true; opacity:0; visible:false">
+                <a-animation 
+                  attribute="material.opacity"
+                  from="0"
+                  to="1"
+                  dur="2000"
+                  fill="forwards"
+                  easing="ease-in-out-sine"
+                  begin="door-four"
+                  end="door-one"
+                  repeat="indefinite">
+                </a-animation>
                 
                 <a-entity class="square" scale="1.5 1.5 1.5" position="0 0 -0.5">
                   <a-entity position="0 1 0" scale="1 1 1" material="shader:flat; color:white" geometry="primitive:plane; width: 1; height: 0.005"></a-entity>
@@ -100,12 +102,91 @@ class App extends Component {
                 
                 <a-entity position="0 0 0" scale="0.5 0.5 0.5" material="shader:flat; color:white" geometry="primitive:ring;radiusInner:1;radiusOuter:1.002"></a-entity>
                 
-                <a-entity position="0 0 0" scale="1 1 1" material="shader:flat; color:white" geometry="primitive:ring;radiusInner:1;radiusOuter:1.005"></a-entity>
+                <a-entity class="listening" position="0 0 0" scale="1 1 1" material="shader:flat; color:white;" geometry="primitive:ring;radiusInner:1;radiusOuter:1.005">
+                <a-animation 
+                  attribute="material.opacity"
+                  from="0"
+                  to="1"
+                  dur="2000"
+                  fill="both"
+                  easing="ease-in-out-sine"
+                  begin="door-one"
+                  end="door-two"
+                  repeat="indefinite">
+                </a-animation></a-entity>
                 <a-entity position="0 0 0" scale="2 2 2" material="shader:flat; color:white" geometry="primitive:ring;radiusInner:1;radiusOuter:1.002"></a-entity>
               
               </a-entity>
+          </a-entity>
+          
+          
+          
+          
+          
+          
+          <a-video class="three-champion listening" position="0 0 8" rotation="0 0 45" look-at="#camera" src="#video1" width="16" height="9" opacity="0.0" transparent="true">
+            <a-animation 
+              attribute="opacity"
+              from="0"
+              to="1"
+              dur="2000"
+              fill="both"
+              easing="ease-in"
+              begin="door-two"
+              end="door-three"
+              repeat="indefinite"></a-animation>
+          </a-video>
+          
+
+        
+          <a-entity>
+            <a-animation attribute="rotation"
+              to="0 -360 0"
+              dur="108000"
+              fill="forwards"
+              easing="ease-in-out-sine"
+              repeat="indefinite"></a-animation>
+            
+            <a-entity rotation="45 45 0" geometry="primitive:sphere; radius:10" scale='-1 1 1' material="repeat: 10 1; shader:flat; transparent:true; src:#lines1;"></a-entity>
+          </a-entity>
+          
+          <a-entity>
+            <a-animation attribute="rotation"
+              to="360 360 0"
+              dur="54000"
+              fill="forwards"
+              easing="ease-in-out-sine"
+              repeat="indefinite"></a-animation>
+            
+            <a-entity rotation="-145 -145 0" geometry="primitive:sphere; radius:8" scale='-1 1 1' material="repeat: 4 4; shader:flat; transparent:true; src:#sludge3;"></a-entity>
+          </a-entity>
+          
+          
+  
+          // fixed
+          <a-entity id="musix" position="0 0 -1" sound="src: #sounds; autoplay: true; loop: true;">
+          </a-entity>
+          <a-entity id="disc" position="0 0 0">
+             <a-animation attribute="rotation"
+               to="0 -360 0"
+               dur="108000"
+               fill="forwards"
+               easing="ease-in-out-sine" 
+               repeat="indefinite"></a-animation>
+               
+               
+            // fixed far
+            
+          
+            // fixed near
+             
+            
+            <a-camera id="camera" wasd-controls-enabled look-controls wasd-controls="fly:true; acceleration:400">
+              // fixed to camera
+            
+            
               
-              <a-entity geometry="primitive:sphere; radius:49" scale='-1 1 1' material="repeat: 10 10; shader:flat; transparent:true; src:#sludge3;"></a-entity>
+              <a-entity geometry="primitive:sphere; radius:39" scale='-1 1 1' material="repeat: 10 10; shader:flat; transparent:true; src:#sludge3;"></a-entity>
     
             </a-camera>
             

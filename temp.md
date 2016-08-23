@@ -32,3 +32,56 @@
             <a-curvedimage look-at="#camera" src="#test3" height="3.0" radius="5.7" ></a-curvedimage>
             <a-curvedimage look-at="#camera" src="#test4" height="3.0" radius="5.7" ></a-curvedimage>
           </a-entity>
+          
+          
+          
+          
+          <a-entity id="circle" layout="type:circle; radius:15" rotation="0 180 0">
+          <a-animation attribute="rotation"
+              to="0 -360 0"
+              dur="50"
+              fill="forwards"
+              easing="linear"
+              repeat="indefinite"></a-animation>
+             <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+              <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+               <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                 <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                  <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                   <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                    <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                     <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera"></a-video>
+          </a-entity>
+          
+                    <a-entity id="circle" layout="type:circle; radius:20">
+             <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+              <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+               <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                 <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                  <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                   <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                    <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                     <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+                      <a-video src="#video1" width="16" height="9" position="-10 0 -19" look-at="#camera" scale="6 6 6"></a-video>
+          </a-entity>
