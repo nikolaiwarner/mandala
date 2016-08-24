@@ -34,6 +34,31 @@
           </a-entity>
           
           
+            <a-entity layout="type:circle; radius:7" scale="1 1 1" rotation="0 0 180">
+          <a-animation attribute="rotation"
+               to="0 360 0"
+               dur="580"
+               fill="forwards"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+            <a-entity material="src: #sleep1" look-at="#camera" src="#sleep1" geometry="primitive:plane; width: 4; height: 4" ></a-entity>
+            <a-entity material="src: #sleep1" look-at="#camera" src="#sleep1" geometry="primitive:plane; width: 4; height: 4" ></a-entity>
+            <a-entity material="src: #sleep1" look-at="#camera" src="#sleep1" geometry="primitive:plane; width: 4; height: 4" ></a-entity>
+            <a-entity material="src: #sleep1"  look-at="#camera" src="#sleep1" geometry="primitive:plane; width: 4; height: 4" ></a-entity>
+          </a-entity>
+    
+    
+    
+    
+             
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="90 0 0"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="90 0 0"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="90 0 0"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="90 0 0"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="90 0 0"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="90 0 0"></a-entity></a-entity>
+      
+          
           
           
           <a-entity id="circle" layout="type:circle; radius:15" rotation="0 180 0">

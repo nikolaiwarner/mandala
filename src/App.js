@@ -47,6 +47,9 @@ class App extends Component {
             <img id="test5" src={require('./images/ELIANDNICK__0221.jpg')} alt="" />
             
             <video id="video1" autoPlay loop="true" src={require('./images/typical-nick-totally.webm')} />
+            <video id="sleep1" autoPlay loop="true" src={require('./images/sleep1_1.webm')} />
+            <video id="eat1" autoPlay loop="true" src={require('./images/eat1.webm')} />
+            <video id="sleep0" autoPlay loop="true" src={require('./images/sleep0.webm')} />
  
             
             <audio id="sounds" src={require('./images/mandala-music.mp3')} />
@@ -57,13 +60,80 @@ class App extends Component {
           <a-sky id="sky" color="gold"></a-sky>
           <a-entity geometry="primitive:sphere; radius:100" scale='-1 1 1' material="repeat: 3 3; shader:flat; transparent:true; src:#sludge3;"></a-entity>
     
+    
+        <a-entity id="sleep0" >
+         <a-animation attribute="rotation"
+               from="0 0 0"
+               to="360 0 0"
+               dur="120"
+               fill="forwards"
+               easing="ease-in-out-sine"
+               repeat="indefinite"></a-animation>
+          <a-entity layout="type:circle; radius:7" scale="1 1 1" rotation="90 90 0"  position="0 0 0">
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep0" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+          </a-entity>
+        </a-entity>
+        
+        
+        <a-entity id="sleep1" >
+         <a-animation attribute="rotation"
+               from="0 45 0"
+               to="360 45 0"
+               dur="120"
+               fill="forwards"
+               easing="ease-in-out-sine"
+               repeat="indefinite"></a-animation>
+          <a-entity layout="type:circle; radius:7" scale="1 1 1" rotation="90 90 0"  position="0 0 0">
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #sleep1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+          </a-entity>
+        </a-entity>
+        
+        <a-entity id="eat1" >
+         <a-animation attribute="rotation"
+               from="0 90 0"
+               to="360 90 0"
+               dur="120"
+               fill="forwards"
+               easing="ease-in-out-sine"
+               repeat="indefinite"></a-animation>
+          <a-entity layout="type:circle; radius:7" scale="1 1 1" rotation="90 90 0"  position="0 0 0">
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="src: #eat1" geometry="primitive:plane; width: 6; height: 6" rotation="0 0 90"></a-entity></a-entity>
+          </a-entity>
+        </a-entity>
+        
+        <a-entity material="src: #eat1" look-at="#camera" position="-3 3 0" geometry="primitive:plane; width: 10; height: 10"></a-entity>
 
+    
+  
+    
+    
           // near
           
-          <a-entity position="-10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
-          <a-entity position="10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
-          <a-entity position="-10 0 8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
-          <a-entity position="10 0 8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:black"></a-entity>
+          <a-entity position="-10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:gold"></a-entity>
+          <a-entity position="10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:gold"></a-entity>
+          <a-entity position="-10 0 8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:gold"></a-entity>
+          <a-entity position="10 0 8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:gold"></a-entity>
           
           <a-entity id="door-one" position="0 0 -10">
             <a-entity id="titles" position="-0.6 0 7">
