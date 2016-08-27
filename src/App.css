@@ -9,6 +9,7 @@
 
 .a-canvas {
   background-color: #000;
+  -webkit-filter: invert(100%) grayscale(100%)
 }
 
 @media (min-width: 1920px) and (min-height: 1080px) {

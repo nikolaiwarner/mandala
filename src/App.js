@@ -40,13 +40,13 @@ class App extends Component {
             <img id="lines1" src={require('./images/lines1.gif')} alt="" />
             <img id="sludge3" src={require('./images/sludge3.png')} alt="" />
             
-            <video id="video1" autoPlay loop="true" src={require('./images/typical-nick-totally.webm')} />
-            <video id="sleep1" autoPlay loop="true" src={require('./images/sleep1_1.webm')} />
-            <video id="eat1" autoPlay loop="true" src={require('./images/eat1.webm')} />
-            <video id="sleep0" autoPlay loop="true" src={require('./images/sleep0.webm')} />
+            <video muted id="video1" autoPlay loop="true" src={require('./images/typical-nick-totally.webm')} />
+            <video muted id="sleep1" autoPlay loop="true" src={require('./images/sleep1_1.webm')} />
+            <video muted id="eat1" autoPlay loop="true" src={require('./images/eat1.webm')} />
+            <video muted id="sleep0" autoPlay loop="true" src={require('./images/sleep0.webm')} />
  
-            <video id="exercise1" autoPlay loop="true" src={require('./images/exercise1.webm')} />
-            <video id="eat0" autoPlay loop="true" src={require('./images/eat0.webm')} />
+            <video muted id="exercise1" autoPlay loop="true" src={require('./images/exercise1.webm')} />
+            <video muted id="eat0" autoPlay loop="true" src={require('./images/eat0.webm')} />
             
            
             <audio id="sounds" src={require('./images/mandala-music.mp3')} />
