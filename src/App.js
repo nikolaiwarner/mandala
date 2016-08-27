@@ -40,12 +40,6 @@ class App extends Component {
             <img id="lines1" src={require('./images/lines1.gif')} alt="" />
             <img id="sludge3" src={require('./images/sludge3.png')} alt="" />
             
-            <img id="test1" src={require('./images/lilone.png')} alt="" />
-            <img id="test2" src={require('./images/png-11.png')} alt="" />
-            <img id="test3" src={require('./images/png-17.png')} alt="" />
-            <img id="test4" src={require('./images/png-18.png')} alt="" />
-            <img id="test5" src={require('./images/ELIANDNICK__0221.jpg')} alt="" />
-            
             <video id="video1" autoPlay loop="true" src={require('./images/typical-nick-totally.webm')} />
             <video id="sleep1" autoPlay loop="true" src={require('./images/sleep1_1.webm')} />
             <video id="eat1" autoPlay loop="true" src={require('./images/eat1.webm')} />
@@ -54,14 +48,12 @@ class App extends Component {
             <video id="exercise1" autoPlay loop="true" src={require('./images/exercise1.webm')} />
             <video id="eat0" autoPlay loop="true" src={require('./images/eat0.webm')} />
             
-            <video id="lecture" autoPlay loop="true" src={require('./images/lecture.webm')} />
-            
+           
             <audio id="sounds" src={require('./images/mandala-music.mp3')} />
-            <audio id="growstrong" src={require('./images/lecture.mp3')} />
+     
           </a-assets>
         
-          
-          // far 
+ 
           <a-sky id="sky" color="pink"></a-sky>
         
     
@@ -108,26 +100,26 @@ class App extends Component {
                easing="ease-in-out-sine"
                repeat="indefinite"></a-animation>
           <a-entity layout="type:dodecahedron; radius:10" scale="1 1 1" rotation="0 90 0"  position="0 0 0">
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
-            <a-entity look-at="#camera"><a-entity material="src: #color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>            
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>
+            <a-entity look-at="#camera"><a-entity material="color: gold" geometry="primitive:plane; width: 0.5; height: 0.01" rotation="0 0 90"></a-entity></a-entity>            
           </a-entity>
         </a-entity>
 
@@ -249,10 +241,6 @@ class App extends Component {
         
         <a-entity material="src: #eat1" look-at="#camera" position="0 0 6" geometry="primitive:plane; width: 10; height: 10"></a-entity>
 
-  
-    
-    
-          // near
           
           <a-entity position="-10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:gold"></a-entity>
           <a-entity position="10 0 -8" look-at="#camera" geometry="primitive:plane; width: 5; height: 1000"  material="shader:flat; color:gold"></a-entity>
@@ -268,7 +256,7 @@ class App extends Component {
           </a-entity>
           
           <a-entity id="door-four" position="0 0 4" look-at="#camera">
-              // mandala
+
               <a-entity id="mandala" class="listening" position="0 0 0" scale="4 4 4" material="transparent:true; opacity:0; visible:false">
                 <a-animation 
                   attribute="material.opacity"
@@ -281,6 +269,10 @@ class App extends Component {
                   end="door-one"
                   repeat="indefinite">
                 </a-animation>
+                
+                            
+                   <a-entity id="musix" position="0 0 -1" sound="src: #sounds; autoplay: true; loop: true;">
+          </a-entity>
                 
                 <a-entity class="square" scale="1.5 1.5 1.5" position="0 0 -0.5">
                   <a-entity position="0 1 0" scale="1 1 1" material="shader:flat; color:white" geometry="primitive:plane; width: 1; height: 0.005"></a-entity>
@@ -321,11 +313,7 @@ class App extends Component {
           </a-entity>
         
           
-          
-  
-          // fixed
-          <a-entity id="musix" position="0 0 -1" sound="src: #sounds; autoplay: true; loop: true;">
-          </a-entity>
+   
           
           <a-entity id="disc" position="0 0 0">
              <a-animation attribute="rotation"
@@ -335,19 +323,11 @@ class App extends Component {
                easing="ease-in-out-sine" 
                repeat="indefinite"></a-animation>
                
-               
-            // fixed far
             
-          
-            // fixed near
-             
-            <a-entity position="0 0 -1" sound="src: #growstrong; autoplay: true; loop: true;">
-            </a-entity>
+                   <a-entity id="musix" position="0 0 -1" sound="src: #sounds; autoplay: true; loop: true;">
+          </a-entity>
             
             <a-camera id="camera" wasd-controls-enabled look-controls wasd-controls="fly:true; acceleration:400">
-              // fixed to camera
-            
-            
               
               <a-entity geometry="primitive:sphere; radius:39" scale='-1 1 1' material="repeat: 10 10; shader:flat; transparent:true; src:#sludge3;"></a-entity>
     
